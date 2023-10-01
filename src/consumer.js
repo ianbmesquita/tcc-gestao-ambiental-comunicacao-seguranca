@@ -10,7 +10,7 @@ const rabbitMqConfig = {
     port: 5672,
     username: process.env.USERNAME_QUEUE,
     password: process.env.PASSWORD_QUEUE
-  }
+}
 
 async function startConsumer() {
     const connection = await amqp.connect(rabbitMqConfig);
